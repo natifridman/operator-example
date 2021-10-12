@@ -1,0 +1,8 @@
+apiVersion: example.nati.com/v1
+kind: DemoPod
+metadata:
+  name: demopod-sample
+spec:
+  # Add fields here
+  name: test
+  image: nginx

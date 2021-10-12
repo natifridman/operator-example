@@ -1,0 +1,34 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - example.nati.com
+  resources:
+  - demopods
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - example.nati.com
+  resources:
+  - demopods/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - example.nati.com
+  resources:
+  - demopods/status
+  verbs:
+  - get
+  - patch
+  - update
