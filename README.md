@@ -1,6 +1,6 @@
 # operator-example
 
-An example Kubernetes operator that creates pods
+An example Kubernetes operator that creates pods.  
 The operator created with the `operator-sdk` tool
 
 ## Steps for creation
